@@ -163,7 +163,7 @@ ol {
   max-width: 1440px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/people-office\ 1.jpg);
+  url(../images/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -427,6 +427,8 @@ ol {
 }
 
 .portfolio-cover-text {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 0px;
   color: #f4f4fd;
@@ -443,7 +445,7 @@ ol {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.portfolio-list-item:hover .portfolio-cover {
+.portfolio-list-item:hover .portfolio-cover-text {
   transform: translateY(0);
 }
 
