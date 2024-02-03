@@ -52,7 +52,7 @@ ol {
 
 .header-navi {
   display: flex;
-  margin-right: 76px;
+  margin-right: auto;
   align-items: center;
 }
 
@@ -92,12 +92,12 @@ ol {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.studio-linc {
+.current {
   position: relative;
   color: #404bbf;
 }
 
-.studio-linc::after {
+.current::after {
   position: absolute;
   content: "";
   left: 0;
@@ -224,12 +224,13 @@ ol {
   gap: 24px;
 }
 
-.advan-icon-strat {
+.advan-icon-strat{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
+  border: 1px solid #8E8F99;
   border-radius: 4px;
   margin-bottom: 8px;
 }
@@ -344,6 +345,7 @@ ol {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .main-team-img {
@@ -446,24 +448,22 @@ ol {
 
 /*=================FOOTER============================*/
 
+
 .footer {
-  display: flex;
   background: #2e2f42;
   padding: 100px 0;
-  justify-content: center;
-  align-items: center;
+}
+
+.foot-div-div{
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-}
-.foot-div-div{ 
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  margin: 0 auto;
-}
+align-items: baseline;
+display: flex;}
 
-.foot-div{margin-right: 120px;}
+
+
 
 .footer-logo span {
   color: #f4f4fd;
@@ -474,46 +474,43 @@ ol {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 1.17;
+  line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   cursor: pointer;
+  margin-bottom: 16px;
   display: inline-block;
 }
 
+
 .footer-text {
-  width: 100%;
   max-width: 264px;
   color: #f4f4fd;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
+
+.foot-div{margin-right: 120px;}
 
 .foot-div-list {
   display: block;
   justify-content: center;
-  margin-right: 1300px;
-  margin-bottom: 40px;
+  align-items: center;
 }
 
-
-.footer-social {
-  color: #ffffff;
-  font-family: Roboto;
+.footer-social{font-family: Roboto;
   font-size: 16px;
+  font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02;
+  color: #ffffff;
   display: flex;
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px;}
 
 .icon-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 16px;
 }
 
@@ -531,13 +528,11 @@ ol {
   border-radius: 50%;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon-link:hover {
+.icon-link:hover, .icon-link:focus {
   background-color: #31d0aa;
 }
-
-.icon-link:focus{background-color: #31d0aa;}
-
-
-.icon-svg-footer{fill: #f4f4fd;}
