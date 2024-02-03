@@ -504,10 +504,10 @@ display: flex;}
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.02;
   color: #ffffff;
   display: flex;
-  margin-bottom: 16px;}
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;}
 
 .icon-list {
   display: flex;
